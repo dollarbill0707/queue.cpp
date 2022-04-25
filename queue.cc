@@ -33,9 +33,10 @@ class Queue{
 			delete [] mem;
 			mem=tmp;
 			capacity*=2;
+			first=0;
 		}
-		mem[elements]=x;
-		elements++;
+		//mem[elements]=x;
+		//elements++;
 	
 
 
@@ -70,13 +71,7 @@ q.push(5);
 q.push(6);
 q.push(7);
 
-cout<<q.front()<<endl;
-q.pop();
-q.pop();
-q.pop();
-q.pop();
-q.pop();
-q.pop();
+
 cout<<q.front()<<endl;
 	return 0;
 }
